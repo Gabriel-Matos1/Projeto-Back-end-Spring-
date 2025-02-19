@@ -1,16 +1,16 @@
 package com.example.gabs.controller;
 
 import com.example.gabs.models.Model;
-import com.example.gabs.models.cliente;
-import com.example.gabs.service.GerirCliente;
 import com.example.gabs.service.HelloWorldService;
-import com.example.gabs.service.ativacaoClienteService;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.example.gabs.service.AtivacaoClienteService;
 
 @RestController
 @RequestMapping("/")
@@ -27,21 +27,18 @@ public class HelloWorldController {
         return helloWorldService.helloWorldSave(novo);  // Chamando o serviço para salvar o modelo
     }
 
-
-    @PostMapping("/usuario")
-    public cliente cadastrar(@RequestBody cliente novo) {
-        return GerirCliente.cadastrar(novo);
-        }
-
     @GetMapping("/dash")
     public String showDashboard() {
             return "Bem-vindo!";
     }
 
+    @Autowired
+    private AtivacaoClienteService ativacaoClienteService;
+
     @GetMapping("/inicio")
-    public String showInicio() {
-        // Lógica para a página inicial
-        return "Bem-vindo à página inicial!";
+    public ResponseEntity<String> showInicio() {
+        ativacaoClienteService.teste(1); // Agora chamado corretamente
+        return ResponseEntity.ok("Deu certo");
     }
 
     @GetMapping("/helloWorld")

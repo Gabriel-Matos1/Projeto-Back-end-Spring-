@@ -7,11 +7,10 @@ import jakarta.persistence.Id;
 
 @Entity
 public class cliente {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idCliente;
-
+    
     private String name;
     private int idade;
     private String empresa;
