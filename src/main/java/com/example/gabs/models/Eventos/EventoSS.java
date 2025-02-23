@@ -1,4 +1,6 @@
-package com.example.gabs.models;
+
+
+package com.example.gabs.models.Eventos;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,7 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Evento {
+public class EventoSS {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,7 +16,7 @@ public class Evento {
     private Long idEvento;
     private String nome;
     private Long idCliente;
-    private String data;
+    private String dataE;
 
     public Long getIdEvento(){
         return idEvento;
@@ -36,10 +38,10 @@ public class Evento {
     public void setIdCliente(Long idCliente){
         this.idCliente = idCliente;
     }
-    public String getData(){
-        return data;
+    public String getDataE(){
+        return dataE;
     }
-    public void setData(String data){
-        this.data = data;
+    public void setDataE(String dataE){
+        this.dataE = dataE;
     }
 }

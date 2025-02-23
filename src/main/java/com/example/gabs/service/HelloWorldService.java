@@ -3,8 +3,8 @@ package com.example.gabs.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.gabs.models.Model;
-import com.example.gabs.models.ModelRepository;
+import com.example.gabs.models.Model.Model;
+import com.example.gabs.models.Model.ModelRepository;
 
 @Service
 public class HelloWorldService {

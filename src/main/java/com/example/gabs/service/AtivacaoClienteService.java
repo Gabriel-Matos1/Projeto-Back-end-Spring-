@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 
 import com.example.gabs.components.notificacao;
 import com.example.gabs.excessoes.EventoNaoEncontrado;
-import com.example.gabs.models.ClienteRepository;
-import com.example.gabs.models.cliente;
+import com.example.gabs.models.clientes.ClienteRepository;
+import com.example.gabs.models.clientes.cliente;
 
 @Service
 public class AtivacaoClienteService {

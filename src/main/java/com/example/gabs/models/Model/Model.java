@@ -1,4 +1,4 @@
-package com.example.gabs.models;
+package com.example.gabs.models.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

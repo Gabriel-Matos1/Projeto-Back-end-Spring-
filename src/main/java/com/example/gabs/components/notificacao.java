@@ -2,7 +2,7 @@ package com.example.gabs.components;
 
 import org.springframework.stereotype.Component;
 
-import com.example.gabs.models.cliente;
+import com.example.gabs.models.clientes.cliente;
 
 @Component
 public class notificacao {

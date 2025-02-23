@@ -1,6 +1,5 @@
 package com.example.gabs.controller;
 
-import com.example.gabs.models.Model;
 import com.example.gabs.service.HelloWorldService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.gabs.models.Model.Model;
 import com.example.gabs.service.AtivacaoClienteService;
 
 @RestController

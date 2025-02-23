@@ -1,0 +1,15 @@
+1 - 
+2 - a velocidade máxima nas vias de transito rápido 80km/hr
+3 - b - velocidadem  máxima de trrandisto rápido
+4 - 
+6 - fvvv
+7 - d
+8 - a - parar o veiculo pelo tempo indispensavel possui apenas que não intenrompe 
+9 - c-  para conduzir motor tem que ter C D E
+10 - alternativas corretas  1 2 3 
+11 - d - transitar contramao em vias de duplo sentido exceto blablabla
+12 - 
+
+isolar - avaliar o estado - chamar 
+isolar - chamar o resgate - avaliar 
+resgatar - isolar - avaliar 901199
